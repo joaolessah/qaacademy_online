@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/algoritmos/algoritmos.iml" filepath="$PROJECT_DIR$/src/algoritmos/algoritmos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qaacademy_online.iml" filepath="$PROJECT_DIR$/qaacademy_online.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/qaacademy_online1.iml" filepath="$PROJECT_DIR$/src/qaacademy_online1.iml" />
+    </modules>
+  </component>
+</project>
