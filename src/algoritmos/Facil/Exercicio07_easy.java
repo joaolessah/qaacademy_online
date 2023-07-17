@@ -3,11 +3,14 @@ package algoritmos.Facil;
 import javax.swing.*;
 
 public class Exercicio07_easy {
-    public static void main(String[] args) {
-        double salario, calculoInss;
-        calculoInss = 0.0;
-        salario = Double.parseDouble(JOptionPane.showInputDialog("Digite seu salário"));
 
+    public static double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o salario"));
+    public static double calculoInss = 0.0;
+
+
+    public static String calculoDoInss (double salario){
+
+        
         if(salario <= 1045.00){
             calculoInss = (salario * 7.5) / 100;
         }
@@ -23,6 +26,7 @@ public class Exercicio07_easy {
         if(salario > 6101.06){
             calculoInss = (salario * 14) / 100;
         }
-        System.out.println("O INSS a ser pago é: " + calculoInss);
+        return "O INSS a ser pago é: " + calculoInss;
     }
+
 }

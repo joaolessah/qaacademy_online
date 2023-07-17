@@ -6,14 +6,8 @@ public class Exercicio03_easy {
     
     static String primeiroValor, segundoValor;
 
-    public static void main(String[] args) {
-        // programa para receceber dados e mostrar dados
-
-        primeiroValor = JOptionPane.showInputDialog("Digite o primeiro valor");
-        segundoValor = JOptionPane.showInputDialog("Digite o segundo valor");
-
-        System.out.println("Primeiro valor digitado: " + segundoValor);
-        System.out.println("Segundo valor digitado: " + primeiroValor);
-
+    public String retornaDoisvalores (int valor1, int valor2){
+        
+        return "Primeiro valor digitado: " + valor2 + " - " + "Segundo valor digitado: " + valor1;
     }
 }
