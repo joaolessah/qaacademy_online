@@ -1,7 +1,5 @@
 package algoritmos.Facil;
 
-import javax.swing.JOptionPane;
-
 public class Exercicio02_easy {
     
     public String retornaPalavra(String palavra) {
