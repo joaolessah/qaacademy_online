@@ -4,7 +4,6 @@ import javax.swing.*;
 
 public class Exercicio07_easy {
 
-    public static double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o salario"));
     public static double calculoInss = 0.0;
 
 

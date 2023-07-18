@@ -4,27 +4,15 @@ import javax.swing.*;
 
 public class Exercicio10_easy {
 
-    public static double valorInvestimento = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor a ser investido"));
+    public double calcularValorJuros (double valorInvestimento){
 
-    public static double valorJuros = 0.0;
+        double valorJuros = 0.0 , taxaJuros = 0.05, ano =1;
 
-    public static void valorInvestido (double valorInvestimento){
-        System.out.println("O valor investido foi: " + valorInvestimento);
-    }
-
-    public static void valorDoJuros (double valorJuros){
-        System.out.println("O valor do juros foi: " + valorJuros);
-    }
-
-    public static void valorComJuros (double valorInvestimento){
-        System.out.println("O total com juros foi: " + (valorJuros + valorInvestimento));
-    }
-
-    public static void calculoInvestimento(double valorInvestimento){
-        int anos = 1;
-        while(anos <= 10){
-            valorJuros += valorInvestimento * 0.05;
-            anos++;
+        while (ano <=10){
+            valorJuros = valorJuros + (valorInvestimento * taxaJuros);
+            ano++;
         }
+        return valorJuros;
+        
     }
 }

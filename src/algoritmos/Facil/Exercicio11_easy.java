@@ -3,19 +3,16 @@ package algoritmos.Facil;
 import javax.swing.*;
 
 public class Exercicio11_easy {
-    public static void main(String[] args) {
+    public int somaDois (int numeroDigitado) {
+    
+        int i = 1;
 
-        int numeroDigitado, cont, soma;
-        numeroDigitado = Integer.parseInt(JOptionPane.showInputDialog("Digite um núemero"));
-        soma = numeroDigitado;
-        cont = 1;
-
-        while (cont <= 100){
-            soma += 2;
-            System.out.println("O total somado é: " + soma);
-            cont ++;
+        while(i <= 100){
+            numeroDigitado += 2;
+            i++;
         }
 
+        return numeroDigitado;
 
     }
 }
