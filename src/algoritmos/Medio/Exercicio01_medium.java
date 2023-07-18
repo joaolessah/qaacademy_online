@@ -1,7 +1,7 @@
 package algoritmos.Medio;
 
 public class Exercicio01_medium {
-    public static void main(String[] args) {
+    public void exibeParOuImpar(){
 
         int cont = 1;
 
