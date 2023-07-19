@@ -4,18 +4,30 @@ package algoritmos.Medio;
 import javax.swing.*;
 
 public class Exercicio08_medium {
-    public static void main(String[] args) {
+    public void nomeNumeroAlunos(){
+
         String nomes [] = new String [5];
         int numeracaoAluno [] = new int [5];
 
         for(int i = 0; i < 5; i++){
-            nomes [i] = JOptionPane.showInputDialog("Digite o nome do aluno " + (i + 1));
-            numeracaoAluno [i] = Integer.parseInt(JOptionPane.showInputDialog("Digite o número do aluno: "));
+            nomes [i] = recebeAluno();
+            numeracaoAluno [i] = recebeNumeroAluno();
         }
+        
+        imprimeNome(nomes, numeracaoAluno);
+    }
 
+
+    private void imprimeNome(String [] vetorNomes, int [] vetorNumeros){
         for(int i = 0; i < 5; i++){
-            System.out.println(numeracaoAluno[i] + "- " + nomes[i]);
+            System.out.println(vetorNumeros[i] + "- " + vetorNomes[i]);
         }
+    }
+    private int recebeNumeroAluno(){
+        return Integer.parseInt(JOptionPane.showInputDialog("Digite o número do aluno: "));
+    }
 
+    public String recebeAluno (){
+        return JOptionPane.showInputDialog("Digite o nome do aluno: ");
     }
 }

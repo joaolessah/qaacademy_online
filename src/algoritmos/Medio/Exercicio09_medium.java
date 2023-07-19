@@ -3,8 +3,9 @@ package algoritmos.Medio;
 import javax.swing.*;
 
 public class Exercicio09_medium {
-    public static void main(String[] args) {
-        int elemento  = Integer.parseInt(JOptionPane.showInputDialog("Digite o elemento que quer saber o fibonaccit"));
+    public int [] calculoFibonacci(int elemento) {
+        
+       
         int vet [] = new int [elemento];
         int cont = 2;
 
@@ -16,12 +17,14 @@ public class Exercicio09_medium {
             cont++;
         }
 
-        cont = 0;
+        return vet;
+    }
 
-        while (cont < elemento){
-            System.out.println(vet[cont]);
-            cont++;
+    public void imprimeVetor(int[] vetor){
+        int i = 0;
+        while (i < vetor.length){
+            System.out.println(vetor[i]);
+            i++;
         }
-
     }
 }

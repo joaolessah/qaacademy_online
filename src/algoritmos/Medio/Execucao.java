@@ -5,10 +5,10 @@ import javax.swing.JOptionPane;
 public class Execucao {
     public static void main(String[] args) {
 
-    Exercicio07_medium exercicio07_medium = new Exercicio07_medium();
-
-    String [] vetorMeses = exercicio07_medium.criaVetorMeses();
+        Exercicio09_medium exercicio09_medium = new Exercicio09_medium();
+        int elemento = Integer.parseInt(JOptionPane.showInputDialog("Digite o elemento que deseja calcular"));
+        int [] vetorFibonacci = exercicio09_medium.calculoFibonacci(elemento);
+        exercicio09_medium.imprimeVetor(vetorFibonacci);
     
-    exercicio07_medium.imprimeValoresVetor(vetorMeses);
     }
 }
